@@ -15,41 +15,27 @@
     object-fit: cover;
     opacity:0.5;
   }
-  .jumbotron .container {
-    z-index: 2;
-    position: relative;
-    min-height: 100%;
-    margin:150px!important;
-    padding:150px!important;
 
-    /* top:0; */
+  .input-group {
+    widows: 350px;
+    padding-left:50px;
   }
 
-  .video-curtine{
-    background-color:blue;
-    width: 200%;
-    height: 1000px;
-    z-index: 0;
-    opacity:0.5;
-    position: absolute;
-/*     top: -100%;
-    left:-50%; */
-    margin-left: -100px;
-    margin-top: -50px;
-  }
 
-  @media (min-width:768px){
+
+
+
+ /*  @media (min-width:575px){
 
       .video-curtine{
           background-color:#343a40;
-          max-width: 855px;
+          max-width: 600px;
           height: 200%;
           z-index: 0;
-          opacity:0.7;
+          opacity:0.8;
           position: absolute;
           top: 0;
           left:-60px;
-          /* left: 768px; */
           transform:skewX(-10deg);
         }
 
@@ -58,15 +44,17 @@
             position: relative;
             padding: 20px!important;
             margin: 0!important;
-
           }
+
+          .text-white{
+            text-align:center;
+            max-width:400px;
+            
+            opacity:0.9;
+        }
+    
         
-    }
-  .text-white{
-        text-align:center;
-        width:600px;
-        opacity:0.9;
-    }
+    } */
 
 
 
