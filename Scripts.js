@@ -9,6 +9,24 @@ function deferVideo() {
     // uncomment if video is not autoplay
     //video.play();
   });
-
 }
 window.onload = deferVideo;
+
+function EmailValidatin()
+{
+  var email = document.getElementById("email");
+
+  var pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,4}$/;
+  var verification = email.value.match(pattern);
+  console.log(verification);
+  if(verification == null)
+  {
+    console.log("Błędny email");
+  } else {
+    console.log("Prawidłowy email");
+  }
+}
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})

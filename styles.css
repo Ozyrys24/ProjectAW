@@ -1,25 +1,37 @@
+/* BODY */
+
 body{
   font-family: 'Montserrat', sans-serif;
-  background-color: #1E1E1E;
+  background-color: #5a514a;
 }
 
+/* BODY END*/
+
+/* MENU */
+
 .nav-link:hover{
-  color: #519ABA!important;
+  color: #e40923!important;
   opacity :0.5;
 }
 
 .nav-item .active{
-  color:#519ABA!important;
+  color:#e40923!important;
   font-weight: bold;
 }
 
+.navbar-black{
+  background-color: #110f0f!important;
+}
+/* MENU END */
+
+/* VIDEO JUMBOTRON */
+
+  /* VIDEO */
 .jumbotron {
     position: relative;
     overflow: hidden;
     background-color:black;
     padding:0!important;
-   /*  border-bottom: 1px solid rgba(81,154,186,0.4);
-    border-top: 1px solid rgba(81,154,186,0.4); */
     border-radius: 0!important;
   }
 
@@ -29,7 +41,6 @@ body{
     top: 0;
     width:100%;
     height:100%;
-    /*  object-fit is not supported on IE  */
     object-fit: cover;
     opacity:0.5;
   }
@@ -41,40 +52,11 @@ body{
     margin: 0!important;
     
   }
-  
-  .input-group {
-    padding-left:0;
-    margin-bottom: 10px!important;
-    margin-top:10px;
-  }
+    /* VIDEO END */
 
-  .box-curtine{
-    z-index: 1;
-    border: 0px solid blue;
-    margin:0;
-    margin-top:40px;
-    margin-bottom:40px;
-    text-align: center;
-    max-width:300px;
-    opacity: 0.9;
-    padding-left:30px;
-    
-  }
-
-  .box-curtine p {
-    text-align: left;
-    color: grey;
-  }
-
-  .box-curtine h1 { 
-   color: #519ABA;
-   text-align: left;
-   font-size:47px;
-   margin-bottom: 20px;
-  }
-
+    /* CURTINE */
   .video-curtine{
-    background-color:#343a40;
+    background-color: #110f0f;
     min-width: 460px;
     height: 200%;
     z-index: 0;
@@ -85,8 +67,49 @@ body{
     transform:skewX(-10deg);
   }
 
+  .box-curtine{
+    z-index: 1;
+    margin:0;
+    margin-top:5px!important;
+    margin-bottom:40px;
+    text-align: center;
+    max-width:300px;
+    opacity: 0.9;
+    padding-left:30px;
+    
+  }
 
+  .box-curtine p {
+    text-align: left;
+    color: white;
+    opacity:0.5;
+    padding-left:15px;
+  }
 
+  .box-curtine h1 { 
+   color:#e40923;
+   opacity:0.8;
+   text-align: left;
+   font-size:50px;
+   margin-bottom: 15px;
+  }
+    /* CURTINE END */
+
+    /* EMAIL INPUT */
+  .input-group {
+    padding-left:0;
+    margin-bottom: 10px!important;
+    margin-top:5px!important;
+  }
+
+  .input-group button {
+    border-top-left-radius: 0!important;
+    border-bottom-left-radius: 0!important;
+    border-left-width: 0;
+  }
+     /* EMAIL INPUT END */
+
+    /* CURTINE RESPONSIVE */
  @media (max-width: 576px){
     
   .video-curtine{
@@ -101,36 +124,56 @@ body{
 
     }
   } 
+    /*CURTINE RESPONSIVE END */
 
+  /* VIDEO JUMBOTRON END */
+
+  /* CONTENT SECTION */
   .content {
     max-width:1000px;
     margin: auto;
-    color: grey;
-   /* border: 1px solid red;*/
-    padding:23px;
     padding-top:0;
+    padding-bottom: 30px;
   }
 
+    /* CONTENT CARD*/
   .avatar {
     padding-top:20px;
   }
 
   .content .card {
-    background-color: #343a40;
-    color: grey;
-    width:100%!important;
+    background-color: #beaba0;
+    color: #5a514a;
+    width: 100%!important;
+    margin:20px;
   }
 
   .content .card-title {
-    color: #519ABA;
+    color: #d1051d;
   }
-  
+    /* CONTENT CARD END */
+
+    /* CONTENT ABOUT ME */
   .aboutme h1{
-    color: #519ABA;
+    color: #ca0920;
     text-align: left;
     font-size:47px;
     margin-bottom: 20px;
     margin-top: 15px;
+  }  
+
+  .aboutme p{
+    color: #beaba0; 
   }
+    /* CONTENT ABOUT ME END */
+
+  /* CONTENT SECTION END */
+
+  /* FOOTER */
+  .black-footer{
+    background-color:#110f0f;
+    color:#e40923!important;
+  }
+  /* FOOTER END */
 
 

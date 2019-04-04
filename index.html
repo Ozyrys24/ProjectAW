@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+    <nav class="navbar bg-dark navbar-dark navbar-black navbar-expand-sm">
 
         <a class="navbar-brand" href="#">Portfolio</a>
 
@@ -56,36 +56,52 @@
                             <div class="input-group mb-3">
                             
                                 <div class="input-group-prepend">
-                                  <span class="input-group-text" id="basic-addon1">@</span>    
+                                  <span class="input-group-text" id="basic-addon1">@</span> 
                                 </div>
                                 
-                                <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                                <input type="text" class="form-control" id="email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                                <button type="button" 
+                                        data-toggle="popover" 
+                                        data-content="Mountaineering boots are a type of footwear used in the sport of mountain climbing."  
+                                        data-placement="right"
+                                        onclick="EmailValidatin()" 
+                                        class="btn btn-light input-group-text" 
+                                        style="text-align:left">
+                                        <img src="images/arrow.png" style="width:12px;height:12px;">
+                                </button>
                             </div>
-                        
                     </div> 
          
             </div>
      
 
-        </div class="container">  
-            <div class="row content">
-                <div class="card col-md-4" style="width:400px">
-                    <img class="card-img-top avatar" src="images/photo.png" alt="Card image" style="width:100%">
+        </div class="container-fluid">  
+            <div class="row justify-content-center content">
+                <div class="card col-md-4 col-10">
+                    <img class="card-img-top avatar" src="images/photo.jpg" alt="My photo" style="width:100%">
                     <div class="card-body">
                       <h4 class="card-title">Mateusz Bugaj</h4>
                       <p class="card-text">Fascynat programowania. Miłośnik backendu. Programuje w C++, Java. Aktualnie jestem studentem pierwszego roku informatyki Wyższej Szkoły Ekonomii i Informatyki uczę się front endu i C#</p>
                     </div>
                 </div>
                 
-                <div class="col-md-8 aboutme">
+                <div class="col-md-7 col-10 aboutme">
                     <h1>O mnie</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur risus nulla, dapibus quis mattis a, feugiat luctus dolor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam urna risus, scelerisque vitae elementum ut, laoreet vel justo. Ut dignissim enim odio, bibendum rutrum nisl condimentum eu. Morbi at ipsum facilisis purus egestas feugiat sit amet sed ligula. Vivamus gravida neque nulla, in malesuada turpis commodo et. Phasellus non tincidunt nulla.</p>
-                    <p>Phasellus non porttitor nibh, eu commodo lacus. Cras vitae dignissim lacus. Quisque efficitur eget felis at vestibulum. Ut volutpat, lorem sed cursus tristique, justo velit ornare mauris, vitae mattis turpis libero sed justo. Donec nec porttitor nulla. Maecenas at tortor tempus nisi iaculis tincidunt sed ac metus. Etiam vehicula tellus sit amet nulla malesuada fermentum. Curabitur mattis cursus mollis. Quisque sodales, ante eu pretium malesuada, nunc nisi imperdiet nulla, quis dictum nulla nisl facilisis leo. Aenean dapibus tortor sapien, vitae consectetur sapien dictum sit amet. Maecenas non lacus neque. Fusce rutrum, ante sed bibendum aliquet, sapien augue accumsan augue, in porta arcu sapien non leo. In porta ligula vitae metus blandit placerat.</p>
+                    <p>Moje pierwsze spotkanie z „programowaniem” miało miejsce w gimnazjum kiedy to zacząłem poznawać HTML’a. Jednak szybko się przekonałem że programowanie to coś więcej niż pisanie nudnych tagów a jest to wspaniały świat w który zacząłem wchodzić dzięki PHP. Później zafascynowały mnie poważniejsze języki programowania. Przy C i C++ spędzałem długie godziny pisząc proste aplikacje strukturalne. Później przyszedł czas na Javę i poznawanie tajnik tajemniczego programowania obiektowego, interfejsów, hermetyzacji. Wtedy też zacząłem zwracać większa uwagę nie tylko na to co piszę, ale taż co najważniejsze, jak wygląda napisany przeze mnie kod. Zrozumiałem jak ważne są proste dobrze nawyki, trafne nazwy zmiennych, pisanie komentarzy i refaktoryzacja po skończonym zadaniu. W tym czasie ukończyłem technikum informatycznie.</p>
+                    <p>Aktualnie studiuje informatykę w Wyższej Szkole Ekonomii i Informatyki w Krakowie, gdzie rozwijam swoje umiejętności i uczę się lepiej współpracować w grupie. Tam też jak i na wałsną rękę uczę się C# .Net. W przyszłości chciałbym zostać full stack developerem.</p>
                 </div>
                 <div>
                     
             </div>
         </div>
+
+        <footer class="card-footer text-white font-small black-footer">
+            <div class="footer-copyright text-center py-3">
+                © 2019 Copyright: Mateusz Bugaj
+            </div>
+        </footer>
+
+
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
