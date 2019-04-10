@@ -6,8 +6,6 @@ function deferVideo() {
     $(this).attr("src", sourceFile);
     var video = this.parentElement;
     video.load();
-    // uncomment if video is not autoplay
-    //video.play();
   });
 }
 window.onload = deferVideo;
@@ -15,18 +13,30 @@ window.onload = deferVideo;
 function EmailValidatin()
 {
   var email = document.getElementById("email");
+  var sendEmail = document.getElementById("sendEmail");
 
-  var pattern = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,4}$/;
+  var pattern = /^[\w\.]+@[a-zA-Z_]+?\.[a-zA-Z]{2,4}$/;
   var verification = email.value.match(pattern);
   console.log(verification);
+  
   if(verification == null)
   {
-    console.log("Błędny email");
-  } else {
-    console.log("Prawidłowy email");
+    $("#sendEmail").popover("show");
+    setTimeout(function(){
+      $("#sendEmail").popover("hide");
+    },2000);
   }
 }
 
-$(function () {
-  $('[data-toggle="popover"]').popover()
+$(document).ready(function() {
+  $('#sendEmail').popover({
+    content: '<span>Błędny adres email</span>',
+    html: true,
+    trigger: "manual",
+    placement: "bottom"
+  });
 })
+
+$( window ).resize(function() {
+  $( "body" ).prepend( "<div>" + $( window ).width() + "</div>" );
+});
