@@ -29,14 +29,31 @@ function EmailValidatin()
 }
 
 $(document).ready(function() {
+  
   $('#sendEmail').popover({
     content: '<span>Błędny adres email</span>',
     html: true,
     trigger: "manual",
     placement: "bottom"
   });
+  
+  $("#testbutton").click(function(){
+    $(".popup-mainbox").slideDown("slow");
+  });
+
+  $("#popup-mainbox-close").click(function(){
+    $(".popup-mainbox").slideUp("slow");
+  });
 })
 
-$( window ).resize(function() {
+
+
+/* $(window).resize(function() {
+  var sticky =  document.getElementById("sticky");
+  sticky.style.width = $(window).width();
+  sticky.style.height = $(window).height();
+}); */
+
+/* $( window ).resize(function() {
   $( "body" ).prepend( "<div>" + $( window ).width() + "</div>" );
-});
+}); */
