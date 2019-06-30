@@ -229,5 +229,11 @@ body{
     color:#e40923!important;
   }
   /* FOOTER END */
-
+  #nazwa
+  {
+    position: absolute;
+    margin-right: 0 auto!important;
+    margin-left: 0 auto!important;
+    text-align: center!important; 
+  }
 

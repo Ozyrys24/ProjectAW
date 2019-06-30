@@ -84,7 +84,7 @@
         </div class="container-fluid">  
             <div class="row justify-content-center content">
                 <div class="card col-md-4 col-10">
-                    <img class="card-img-top avatar" src="images/photo.jpg" alt="My photo" style="width:100%">
+                    <img class="card-img-top avatar " src="images/photo.jpg" alt="My photo" style="width:100%">
                     <div class="card-body">
                       <h4 class="card-title">Mateusz Bugaj</h4>
                       <p class="card-text">Fascynat programowania. Miłośnik backendu. Programuje w C++, Java. Aktualnie jestem studentem pierwszego roku informatyki Wyższej Szkoły Ekonomii i Informatyki uczę się front endu i C#</p>
@@ -122,9 +122,27 @@
                                     
                                     <div class="col-md-6 col-md-offset-3 popup-content-center">
 
-                                        <div class="">
-                                            <img src="./images/test.jpg" class="card-img" alt="...">
-                                        </div>
+                                           <canvas id="nazwa"></canvas> 
+                                            <div >
+                                                <img src="./images/test.jpg" class="card-img" alt="...">
+                                            </div>
+
+                                        <script>
+                                            var c = document.getElementById("nazwa");
+                                            var tekst = c.getContext("2d");
+                                            tekst.font = "50px arial";
+
+                                            var grd = tekst.createLinearGradient(0, 0, 200, 0);
+                                            grd.addColorStop(0, "gray");
+                                            grd.addColorStop(1, "white");
+                                            tekst.globalAlpha = 0.8;
+
+                                            tekst.fillStyle = grd;
+                                            tekst.fillRect(10, 10, 300, 60);
+
+                                            tekst.font = "30px Arial";
+                                            tekst.strokeText("      Nazwa projetu", 10, 50);
+                                        </script>
                                         
                                         <div class="">
                                             <div class="card-body">

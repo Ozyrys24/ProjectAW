@@ -10,6 +10,7 @@ function deferVideo() {
 }
 window.onload = deferVideo;
 
+
 function EmailValidatin()
 {
   var email = document.getElementById("email");
@@ -45,6 +46,8 @@ $(document).ready(function() {
     $(".popup-mainbox").slideUp("slow");
   });
 })
+
+
 
 
 
